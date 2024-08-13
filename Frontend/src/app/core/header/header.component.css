@@ -19,12 +19,7 @@
     top: 43px;
     right: 295px;
   }
-  [nzType="shopping-cart"] {
-    position: absolute; /* o relative */
-    top: calc(50% - 10.5px);
-    left: calc(50% - 40px);
-  }
-  
+
 
   .cart-button {
     position: absolute;
@@ -61,7 +56,7 @@
   .header1 {
     width: 100%;
     position: relative;
-    height: 112px;
+    height: 100px;
     overflow: hidden;
     mix-blend-mode: normal;
     text-align: center;
