@@ -1,1 +1,25 @@
-<p>product-details works!</p>
+<app-header></app-header>
+
+<div class="product-list">
+    <div *ngFor="let product of products" class="card">
+      <nz-card style="width:300px;" [nzCover]="coverTemplate" [nzActions]="[actionSetting, actionEdit, actionEllipsis]">
+        <nz-card-meta
+          [nzTitle]="product.name"
+          [nzDescription]="'PEN: ' + product.price"
+        ></nz-card-meta>
+      </nz-card>
+      <ng-template #coverTemplate>
+        <img alt="example" src="assets/imagenes/product.jpg" />
+      </ng-template>
+      <ng-template #actionSetting>
+        <span nz-icon nzType="setting"></span>
+      </ng-template>
+      <ng-template #actionEdit>
+        <span nz-icon nzType="edit"></span>
+      </ng-template>
+      <ng-template #actionEllipsis>
+        <span nz-icon nzType="ellipsis"></span>
+      </ng-template>
+    </div>
+  </div>
+  
