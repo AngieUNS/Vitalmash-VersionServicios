@@ -15,7 +15,7 @@ h1 {
   text-align: center;
   font-size: var(--font-size-29xl);
   color: var(--color-black);
-  margin: 2rem 0 1rem; /* Aumentado el margen superior y reducido el inferior */
+  margin: 1rem 0 1rem; /* Aumentado el margen superior y reducido el inferior */
 }
 
 
