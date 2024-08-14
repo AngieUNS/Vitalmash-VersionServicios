@@ -3,6 +3,8 @@ import { NzCardModule } from 'ng-zorro-antd/card';
 import { NzAvatarModule } from 'ng-zorro-antd/avatar';
 import { HeaderComponent } from "../../../../core/header/header.component";
 import { CommonModule } from '@angular/common';
+import { NzInputModule } from 'ng-zorro-antd/input';
+import { NzIconModule } from 'ng-zorro-antd/icon';
 
 @Component({
   selector: 'app-product-details',
@@ -11,7 +13,9 @@ import { CommonModule } from '@angular/common';
     HeaderComponent,
     NzCardModule,
     NzAvatarModule,
-    CommonModule
+    CommonModule,
+    NzInputModule,
+    NzIconModule
   ],
   templateUrl: './product-details.component.html',
   styleUrl: './product-details.component.css'

@@ -1,5 +1,14 @@
 <app-header></app-header>
 
+<div class="buscar">
+<nz-input-group [nzSuffix]="suffixIconSearch">
+    <input type="text" nz-input placeholder="input search text" />
+  </nz-input-group>
+  <ng-template #suffixIconSearch>
+    <span nz-icon nzType="search"></span>
+  </ng-template>
+</div>
+
 <div class="product-list">
     <div *ngFor="let product of products" class="card">
       <nz-card style="width:300px;" [nzCover]="coverTemplate" [nzActions]="[actionSetting, actionEdit, actionEllipsis]">
@@ -12,13 +21,13 @@
         <img alt="example" src="assets/imagenes/product.jpg" />
       </ng-template>
       <ng-template #actionSetting>
-        <span nz-icon nzType="setting"></span>
+        
       </ng-template>
       <ng-template #actionEdit>
-        <span nz-icon nzType="edit"></span>
+        
       </ng-template>
       <ng-template #actionEllipsis>
-        <span nz-icon nzType="ellipsis"></span>
+        
       </ng-template>
     </div>
   </div>
